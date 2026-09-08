@@ -1,0 +1,68 @@
+DSTALGO QUIZ
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Input
+        //rectangle length
+        Console.Write("Enter rectangle length: ");
+        double length = Convert.ToDouble(Console.ReadLine());
+        //rectangle width
+        Console.Write("Enter rectangle width: ");
+        double width = Convert.ToDouble(Console.ReadLine());
+        // radius
+        Console.Write("Enter circle radius: ");
+        double radius = Convert.ToDouble(Console.ReadLine());
+
+        //Calculations
+        double rectangleArea = length * width;
+        double rectanglePerimeter = 2 * (length + width);
+
+        double circleArea = 3.14 * radius * radius;
+        double circleCircumference = 2 * 3.14 * radius;
+
+        // Boolean comparisons
+        bool comparison1 = rectangleArea > circleArea;
+        bool comparison2 = rectanglePerimeter < 100;
+        bool comparison3 = circleCircumference > 500;
+
+        // Output
+        Console.WriteLine("\nResults:");
+        Console.WriteLine("Rectangle Area: " + rectangleArea);
+        Console.WriteLine("Rectangle Perimeter: " + rectanglePerimeter);
+        Console.WriteLine("Circle Area: " + circleArea);
+        Console.WriteLine("Circle Circumference: " + circleCircumference);
+
+        //Output boolean comparisons
+        Console.WriteLine("\nBoolean Comparisons:");
+        Console.WriteLine("Rectangle Area > Circle Area: " + comparison1);
+        Console.WriteLine("Rectangle Perimeter < 100: " + comparison2);
+        Console.WriteLine("Circle Circumference > 500: " + comparison3);
+
+
+
+
+        //5 Input and Output Activity
+        Console.Write("Enter your Name: ");
+        string name = Console.ReadLine();
+        Console.Write("Enter Your Age: ");
+        int age = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter Your Favorite Food: ");
+        string favoriteFood = Console.ReadLine();
+        Console.Write("Enter Your Favorite Color: ");
+        string favoriteColor = Console.ReadLine();
+        Console.Write("Enter Your Favorite Car: ");
+        string favoriteCar = Console.ReadLine();
+
+        //Output
+        Console.WriteLine("\nYour Information:");
+        Console.WriteLine("Name: " + name);
+        Console.WriteLine("Age: " + age);
+        Console.WriteLine("Favorite Food: " + favoriteFood);
+        Console.WriteLine("Favorite Color: " + favoriteColor);
+        Console.WriteLine("Favorite Car: " + favoriteCar);
+    }
+}
